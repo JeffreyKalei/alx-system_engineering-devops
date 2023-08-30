@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -ap1 | { ls -d .* ; ls -d [[:digit:]]* ; ls -d [[:alpha:]]* ; } | sed ':a;N;$!ba;s/\n/, /g'; echo
+
